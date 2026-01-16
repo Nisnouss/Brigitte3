@@ -58,6 +58,38 @@ i{
     padding-right: 10px;
 }
 
+/* Header */
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1150px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a img{
+    width: 103px;
+}
+
+header nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+header #Accueil{
+    color: var(--orangefoncé);
+}
+
+header div i{
+    color: var(--orangefoncé);
+}
+
+header #burger_menu{
+    display: none;
+}
+
 /* Main */
 
 /* Section 1 */
@@ -114,36 +146,23 @@ main .section2 div a:hover{
     transition: all 0.3s ease-in-out;
 }
 
-/* Header */
+main #btn #afficher{
+    border: 1px solid #605BE5;
+    padding: 10px 15px;
+    background-color: #605BE5;
+    color: white;
+    width: fit-content;
+}
 
-header{
+main #btn #afficher:hover{
+    background-color: #CC3900;
+    border: #CC3900;
+    transition: all 0.3s ease-in-out;
+}
+
+main #btn{
     display: flex;
-    flex-wrap: wrap;
-    margin: 20px auto;
-    max-width: 1150px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header a img{
-    width: 103px;
-}
-
-header nav ul{
-    display: flex;
-    gap: 20px;
-}
-
-header #Accueil{
-    color: var(--orangefoncé);
-}
-
-header div i{
-    color: var(--orangefoncé);
-}
-
-header #burger_menu{
-    display: none;
+    justify-content: center;
 }
 
 /* Footer */
@@ -220,6 +239,10 @@ footer .nav #Accueil{
 
     main .section2 div .info{
         text-align: center;
+    }
+
+    main #btn{
+        margin-top: 15px;
     }
 
     footer{
